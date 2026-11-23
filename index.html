@@ -1,0 +1,1407 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>丽柜美束写真 - 品牌官方视频门户 | 原创高清人像影像社区</title>
+<meta name="description" content="丽柜美束写真官方网站，专注原创高清人像写真与美学影像的品牌视频门户，汇聚专业创作者、精品内容与真实用户口碑，持续运营的品质影像内容生态。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232b2233'/%3E%3Ccircle cx='32' cy='26' r='11' fill='%23d4a373'/%3E%3Cpath d='M14 56c3-13 10-19 18-19s15 6 18 19z' fill='%23b392ac'/%3E%3Ccircle cx='47' cy='17' r='4' fill='%23e07a5f'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --mg-bg:#f6f1f4;
+    --mg-surface:#fffdfe;
+    --mg-ink:#2b2233;
+    --mg-ink-soft:#5c4f66;
+    --mg-line:#e4d9e2;
+    --mg-plum:#6b3f63;
+    --mg-plum-deep:#472a44;
+    --mg-lilac:#b392ac;
+    --mg-gold:#c99a4b;
+    --mg-coral:#e07a5f;
+    --mg-tint:#efe4ee;
+    --mg-radius:16px;
+    --mg-shadow:0 10px 30px rgba(71,42,68,.08);
+    --mg-head:0;
+  }
+  *,*::before,*::after{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,-apple-system,"Segoe UI",sans-serif;
+    background:var(--mg-bg);
+    color:var(--mg-ink);
+    line-height:1.75;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;display:block}
+  a{color:inherit;text-decoration:none}
+  button{font-family:inherit;cursor:pointer}
+  h1,h2,h3,h4{margin:0;line-height:1.3;font-weight:700}
+  p{margin:0}
+  ul,ol{margin:0;padding:0;list-style:none}
+  .mg-wrap{width:min(1180px,92vw);margin-inline:auto}
+  .mg-section{padding:64px 0}
+  .mg-section--tight{padding:44px 0}
+  .mg-eyebrow{
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:13px;letter-spacing:.18em;color:var(--mg-plum);
+    text-transform:uppercase;font-weight:600;margin-bottom:14px;
+  }
+  .mg-eyebrow::before{content:"";width:26px;height:2px;background:var(--mg-lilac);border-radius:2px}
+  .mg-h2{font-size:clamp(24px,3.2vw,36px);color:var(--mg-plum-deep);letter-spacing:.01em}
+  .mg-lead{color:var(--mg-ink-soft);font-size:16px;max-width:70ch}
+  .mg-btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:8px;
+    padding:11px 22px;border-radius:999px;border:1px solid transparent;
+    font-size:15px;font-weight:600;transition:transform .2s ease,box-shadow .2s ease,background .2s ease;
+  }
+  .mg-btn--solid{background:var(--mg-plum);color:#fff;box-shadow:0 8px 20px rgba(107,63,99,.25)}
+  .mg-btn--solid:hover{background:var(--mg-plum-deep);transform:translateY(-2px)}
+  .mg-btn--ghost{border-color:var(--mg-line);background:transparent;color:var(--mg-plum-deep)}
+  .mg-btn--ghost:hover{background:var(--mg-tint);transform:translateY(-2px)}
+  .mg-chip{
+    display:inline-block;padding:3px 10px;border-radius:999px;
+    background:var(--mg-tint);color:var(--mg-plum-deep);
+    font-size:12px;font-weight:600;letter-spacing:.02em;
+  }
+  /* 吸顶公告 + 页头 */
+  .mg-sticky{
+    position:sticky;top:0;z-index:60;
+    background:rgba(246,241,244,.96);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--mg-line);
+  }
+  .mg-notice{
+    background:linear-gradient(90deg,var(--mg-plum-deep),var(--mg-plum) 55%,var(--mg-lilac));
+    color:#fff;
+  }
+  .mg-notice__inner{
+    display:flex;align-items:center;gap:14px;
+    padding:9px 0;font-size:13.5px;
+  }
+  .mg-notice__tag{
+    flex:none;background:#fff;color:var(--mg-plum-deep);
+    border-radius:999px;padding:1px 10px;font-weight:700;font-size:12px;letter-spacing:.06em;
+  }
+  .mg-notice__list{
+    display:flex;gap:28px;overflow:hidden;white-space:nowrap;
+    mask-image:linear-gradient(90deg,#000 92%,transparent);
+  }
+  .mg-notice__item{opacity:.95}
+  .mg-notice__close{
+    margin-left:auto;flex:none;background:transparent;border:0;color:#fff;
+    font-size:16px;line-height:1;opacity:.75;padding:4px;
+  }
+  .mg-notice__close:hover{opacity:1}
+  .mg-header__bar{
+    display:flex;align-items:center;gap:22px;padding:14px 0;
+  }
+  .mg-brand{display:flex;align-items:center;gap:11px;flex:none}
+  .mg-brand__mark{
+    width:42px;height:42px;border-radius:13px;flex:none;
+    background:radial-gradient(circle at 30% 25%,var(--mg-lilac),var(--mg-plum) 70%);
+    display:grid;place-items:center;color:#fff;font-weight:800;font-size:18px;letter-spacing:-.02em;
+    box-shadow:0 6px 16px rgba(107,63,99,.32);
+  }
+  .mg-brand__text{display:flex;flex-direction:column;line-height:1.2}
+  .mg-brand__name{font-size:18px;font-weight:800;color:var(--mg-plum-deep);letter-spacing:.02em}
+  .mg-brand__sub{font-size:11px;color:var(--mg-ink-soft);letter-spacing:.16em}
+  .mg-nav{display:flex;gap:4px;margin-left:8px}
+  .mg-nav__link{
+    padding:8px 13px;border-radius:999px;font-size:14.5px;font-weight:500;color:var(--mg-ink-soft);
+    transition:background .18s ease,color .18s ease;
+  }
+  .mg-nav__link:hover{background:var(--mg-tint);color:var(--mg-plum-deep)}
+  .mg-header__tools{display:flex;align-items:center;gap:10px;margin-left:auto}
+  .mg-search{position:relative;display:flex;align-items:center}
+  .mg-search__input{
+    width:200px;padding:9px 38px 9px 14px;border-radius:999px;
+    border:1px solid var(--mg-line);background:var(--mg-surface);
+    font-size:13.5px;color:var(--mg-ink);outline:none;transition:width .2s ease,border-color .2s ease;
+  }
+  .mg-search__input:focus{width:240px;border-color:var(--mg-lilac)}
+  .mg-search__btn{
+    position:absolute;right:5px;border:0;background:transparent;
+    width:28px;height:28px;border-radius:50%;color:var(--mg-plum);font-size:14px;
+  }
+  .mg-search__hint{
+    position:absolute;top:calc(100% + 8px);left:0;right:0;
+    background:var(--mg-surface);border:1px solid var(--mg-line);border-radius:12px;
+    box-shadow:var(--mg-shadow);padding:8px;font-size:13px;color:var(--mg-ink-soft);
+    display:none;z-index:30;
+  }
+  .mg-search__hint.is-open{display:block}
+  .mg-search__hint b{color:var(--mg-plum-deep)}
+  .mg-burger{
+    display:none;width:42px;height:42px;border-radius:12px;border:1px solid var(--mg-line);
+    background:var(--mg-surface);color:var(--mg-plum-deep);font-size:18px;
+  }
+  .mg-mobile-nav{display:none;padding:6px 0 18px;border-top:1px dashed var(--mg-line)}
+  .mg-mobile-nav.is-open{display:block}
+  .mg-mobile-nav a{display:block;padding:10px 4px;font-size:15px;color:var(--mg-ink-soft);border-bottom:1px solid rgba(228,217,226,.6)}
+  /* HERO 4:6 大幅图文 */
+  .mg-hero{padding:56px 0 30px}
+  .mg-hero__grid{
+    display:grid;grid-template-columns:minmax(0,4fr) minmax(0,6fr);
+    gap:44px;align-items:center;
+  }
+  .mg-hero__title{font-size:clamp(30px,4.4vw,52px);color:var(--mg-plum-deep);letter-spacing:-.01em}
+  .mg-hero__title span{color:var(--mg-coral)}
+  .mg-hero__kicker{font-size:14px;font-weight:700;color:var(--mg-plum);letter-spacing:.14em;margin-bottom:16px}
+  .mg-hero__desc{margin-top:18px;color:var(--mg-ink-soft);font-size:15.5px;text-align:justify}
+  .mg-hero__actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+  .mg-hero__stats{
+    display:grid;grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:12px;margin-top:32px;padding-top:24px;border-top:1px solid var(--mg-line);
+  }
+  .mg-stat__num{font-size:26px;font-weight:800;color:var(--mg-plum-deep);line-height:1.1}
+  .mg-stat__label{font-size:12.5px;color:var(--mg-ink-soft);margin-top:4px}
+  .mg-hero__visual{position:relative}
+  .mg-hero__frame{
+    border-radius:24px;overflow:hidden;box-shadow:0 24px 60px rgba(71,42,68,.18);
+    border:1px solid rgba(255,255,255,.7);
+  }
+  .mg-hero__frame img{width:100%;aspect-ratio:6/5;object-fit:cover}
+  .mg-hero__badge{
+    position:absolute;left:-14px;bottom:26px;background:var(--mg-surface);
+    border:1px solid var(--mg-line);border-radius:14px;padding:12px 16px;
+    box-shadow:var(--mg-shadow);font-size:13px;color:var(--mg-ink-soft);max-width:230px;
+  }
+  .mg-hero__badge strong{display:block;color:var(--mg-plum-deep);font-size:15px;margin-bottom:2px}
+  /* 通用卡片 */
+  .mg-card{
+    background:var(--mg-surface);border:1px solid var(--mg-line);border-radius:var(--mg-radius);
+    box-shadow:0 4px 18px rgba(71,42,68,.05);transition:transform .22s ease,box-shadow .22s ease;
+  }
+  .mg-card:hover{transform:translateY(-4px);box-shadow:0 16px 34px rgba(71,42,68,.12)}
+  /* 焦点视频 */
+  .mg-focus{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:30px;align-items:stretch}
+  .mg-focus__main{overflow:hidden;border-radius:20px;position:relative;background:var(--mg-plum-deep)}
+  .mg-focus__main img{width:100%;aspect-ratio:16/10;object-fit:cover}
+  .mg-focus__meta{position:absolute;inset:auto 0 0 0;padding:20px;background:linear-gradient(0deg,rgba(30,16,30,.86),rgba(30,16,30,0))}
+  .mg-focus__meta h3{color:#fff;font-size:20px}
+  .mg-focus__meta p{color:rgba(255,255,255,.82);font-size:13.5px;margin-top:6px}
+  .mg-focus__tagrow{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+  .mg-focus__tagrow .mg-chip{background:rgba(255,255,255,.18);color:#fff}
+  .mg-focus__list{display:flex;flex-direction:column;gap:14px}
+  .mg-vitem{
+    display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;
+    background:var(--mg-surface);border:1px solid var(--mg-line);border-radius:14px;padding:16px;
+    transition:border-color .18s ease,transform .18s ease;
+  }
+  .mg-vitem:hover{border-color:var(--mg-lilac);transform:translateX(3px)}
+  .mg-vitem__title{font-size:15.5px;color:var(--mg-plum-deep);font-weight:700}
+  .mg-vitem__desc{font-size:13px;color:var(--mg-ink-soft);margin-top:5px}
+  .mg-vitem__foot{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:9px;font-size:12px;color:var(--mg-ink-soft)}
+  .mg-vitem__tags{display:flex;gap:6px;flex-wrap:wrap}
+  .mg-vitem__actions{display:flex;flex-direction:column;gap:8px;align-items:flex-end;justify-content:center}
+  /* 视频文字列表（单列） */
+  .mg-vlist{display:flex;flex-direction:column;gap:16px;margin-top:28px}
+  .mg-vrow{
+    display:grid;grid-template-columns:minmax(0,1fr) 150px;gap:22px;align-items:center;
+    padding:20px;background:var(--mg-surface);border:1px solid var(--mg-line);border-radius:16px;
+  }
+  .mg-vrow:hover{border-color:var(--mg-lilac)}
+  .mg-vrow__title{font-size:17px;color:var(--mg-plum-deep)}
+  .mg-vrow__desc{font-size:13.5px;color:var(--mg-ink-soft);margin-top:6px}
+  .mg-vrow__meta{display:flex;flex-wrap:wrap;gap:12px;margin-top:10px;font-size:12.5px;color:var(--mg-ink-soft)}
+  .mg-vrow__thumb{border-radius:12px;overflow:hidden}
+  .mg-vrow__thumb img{width:100%;aspect-ratio:16/10;object-fit:cover}
+  /* 操作按钮 */
+  .mg-act{
+    border:1px solid var(--mg-line);background:var(--mg-surface);color:var(--mg-ink-soft);
+    border-radius:999px;padding:5px 12px;font-size:12px;display:inline-flex;align-items:center;gap:5px;
+    transition:all .16s ease;
+  }
+  .mg-act:hover{border-color:var(--mg-lilac);color:var(--mg-plum)}
+  .mg-act.is-on{background:var(--mg-plum);border-color:var(--mg-plum);color:#fff}
+  /* 专题 */
+  .mg-topic-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:30px}
+  .mg-topic{padding:22px;display:flex;flex-direction:column;gap:12px}
+  .mg-topic__status{font-size:12px;color:var(--mg-gold);font-weight:700;letter-spacing:.06em}
+  .mg-topic h3{font-size:18px;color:var(--mg-plum-deep)}
+  .mg-topic p{font-size:13.5px;color:var(--mg-ink-soft)}
+  .mg-topic ul{display:flex;flex-direction:column;gap:8px;margin-top:2px}
+  .mg-topic li{font-size:13px;color:var(--mg-ink-soft);padding-left:16px;position:relative}
+  .mg-topic li::before{content:"";position:absolute;left:0;top:9px;width:6px;height:6px;border-radius:50%;background:var(--mg-lilac)}
+  /* 作者双列简介 */
+  .mg-author-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:30px}
+  .mg-author{display:grid;grid-template-columns:64px minmax(0,1fr);gap:16px;padding:20px}
+  .mg-avatar{
+    width:64px;height:64px;border-radius:50%;display:grid;place-items:center;
+    font-weight:800;font-size:22px;color:#fff;flex:none;
+  }
+  .mg-avatar--1{background:linear-gradient(135deg,#b392ac,#6b3f63)}
+  .mg-avatar--2{background:linear-gradient(135deg,#e07a5f,#c99a4b)}
+  .mg-avatar--3{background:linear-gradient(135deg,#98a6c9,#57598c)}
+  .mg-avatar--4{background:linear-gradient(135deg,#8fb9a8,#4e7a68)}
+  .mg-author__name{font-size:16px;color:var(--mg-plum-deep);display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+  .mg-author__field{font-size:12.5px;color:var(--mg-coral);font-weight:600;margin-top:2px}
+  .mg-author__nums{display:flex;gap:14px;font-size:12px;color:var(--mg-ink-soft);margin-top:6px}
+  .mg-author__bio{font-size:13px;color:var(--mg-ink-soft);margin-top:8px}
+  /* 榜单 + 评价 */
+  .mg-board-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:30px}
+  .mg-board{padding:22px}
+  .mg-board h3{font-size:16px;color:var(--mg-plum-deep);padding-bottom:12px;border-bottom:1px dashed var(--mg-line)}
+  .mg-board ol{margin-top:12px;display:flex;flex-direction:column;gap:11px}
+  .mg-board li{display:grid;grid-template-columns:26px minmax(0,1fr) auto;gap:10px;align-items:center;font-size:13.5px}
+  .mg-board .rank{font-weight:800;color:var(--mg-lilac);font-size:14px}
+  .mg-board .vt{color:var(--mg-ink);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .mg-board .vv{color:var(--mg-ink-soft);font-size:12px}
+  /* 评价 */
+  .mg-review-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:28px}
+  .mg-review{padding:18px 20px}
+  .mg-review__head{display:flex;align-items:center;justify-content:space-between;gap:10px}
+  .mg-review__who{display:flex;align-items:center;gap:10px;font-size:14px;font-weight:700;color:var(--mg-plum-deep)}
+  .mg-review__who .mg-avatar{width:34px;height:34px;font-size:14px}
+  .mg-stars{color:var(--mg-gold);font-size:13px;letter-spacing:2px}
+  .mg-review p{font-size:13.5px;color:var(--mg-ink-soft);margin-top:10px}
+  .mg-review__date{font-size:11.5px;color:#a094a8;margin-top:10px}
+  /* 故事/随笔 + 解析长文 */
+  .mg-parse{display:grid;grid-template-columns:minmax(0,1fr);gap:22px;margin-top:26px}
+  .mg-parse__block{padding:26px;border-left:3px solid var(--mg-lilac)}
+  .mg-parse__block h3{font-size:18px;color:var(--mg-plum-deep);margin-bottom:10px}
+  .mg-parse__block p{font-size:14.5px;color:var(--mg-ink-soft);text-align:justify;margin-bottom:10px}
+  .mg-note-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:28px}
+  .mg-note{padding:20px}
+  .mg-note h4{font-size:15px;color:var(--mg-plum-deep);margin-bottom:8px}
+  .mg-note p{font-size:13px;color:var(--mg-ink-soft)}
+  /* FAQ */
+  .mg-faq{margin-top:28px;display:flex;flex-direction:column;gap:12px}
+  .mg-faq details{
+    background:var(--mg-surface);border:1px solid var(--mg-line);border-radius:14px;padding:0 20px;
+  }
+  .mg-faq summary{
+    list-style:none;cursor:pointer;padding:16px 0;font-size:15px;font-weight:600;color:var(--mg-plum-deep);
+    display:flex;justify-content:space-between;align-items:center;gap:12px;
+  }
+  .mg-faq summary::-webkit-details-marker{display:none}
+  .mg-faq summary::after{content:"+";font-size:19px;color:var(--mg-lilac);font-weight:400}
+  .mg-faq details[open] summary::after{content:"−"}
+  .mg-faq details p{font-size:13.5px;color:var(--mg-ink-soft);padding:0 0 16px;border-top:1px dashed var(--mg-line);padding-top:12px}
+  /* 动态 / 合作 */
+  .mg-news{display:flex;flex-direction:column;gap:0}
+  .mg-news__row{
+    display:grid;grid-template-columns:100px minmax(0,1fr);gap:18px;padding:16px 0;
+    border-bottom:1px dashed var(--mg-line);font-size:14px;
+  }
+  .mg-news__row:last-child{border-bottom:0}
+  .mg-news__date{color:var(--mg-coral);font-weight:700;font-size:13px}
+  .mg-news__row h4{font-size:15px;color:var(--mg-plum-deep);font-weight:600}
+  .mg-news__row p{font-size:13px;color:var(--mg-ink-soft);margin-top:3px}
+  .mg-partner-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:24px}
+  .mg-partner{
+    padding:20px 14px;text-align:center;border-radius:14px;background:var(--mg-surface);
+    border:1px dashed var(--mg-line);font-weight:700;color:var(--mg-plum);font-size:14px;
+  }
+  .mg-partner small{display:block;font-weight:400;color:var(--mg-ink-soft);font-size:12px;margin-top:4px}
+  /* 投稿 */
+  .mg-cta{
+    background:linear-gradient(110deg,var(--mg-plum-deep),var(--mg-plum) 60%,#8d5a82);
+    color:#fff;border-radius:22px;padding:44px;display:grid;
+    grid-template-columns:minmax(0,1fr) auto;gap:24px;align-items:center;
+  }
+  .mg-cta h2{font-size:clamp(22px,3vw,30px);color:#fff}
+  .mg-cta p{color:rgba(255,255,255,.82);font-size:14px;margin-top:10px;max-width:62ch}
+  .mg-cta .mg-btn--solid{background:#fff;color:var(--mg-plum-deep)}
+  .mg-cta .mg-btn--solid:hover{background:#f4e9f2}
+  /* 页脚 */
+  .mg-footer{background:#241a26;color:#cbbfd0;padding:54px 0 26px;margin-top:20px}
+  .mg-footer__grid{display:grid;grid-template-columns:minmax(0,1.6fr) repeat(3,minmax(0,1fr));gap:34px}
+  .mg-footer h4{color:#fff;font-size:14px;margin-bottom:14px;letter-spacing:.04em}
+  .mg-footer a{font-size:13px;color:#b5a6bb;display:block;padding:4px 0;transition:color .15s ease}
+  .mg-footer a:hover{color:#fff}
+  .mg-footer__brand{font-size:16px;color:#fff;font-weight:800;display:flex;align-items:center;gap:10px}
+  .mg-footer__desc{font-size:13px;color:#a495ab;margin-top:12px;max-width:38ch}
+  .mg-footer__bottom{
+    margin-top:36px;padding-top:20px;border-top:1px solid rgba(255,255,255,.1);
+    display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-between;font-size:12.5px;color:#94839b;
+  }
+  /* Toast / Modal */
+  .mg-toast{
+    position:fixed;left:50%;bottom:34px;transform:translate(-50%,20px);
+    background:var(--mg-plum-deep);color:#fff;padding:11px 22px;border-radius:999px;
+    font-size:13.5px;opacity:0;pointer-events:none;transition:all .28s ease;z-index:120;
+    box-shadow:0 12px 30px rgba(36,26,38,.4);
+  }
+  .mg-toast.is-on{opacity:1;transform:translate(-50%,0)}
+  .mg-modal{
+    position:fixed;inset:0;z-index:110;display:none;place-items:center;padding:20px;
+    background:rgba(36,26,38,.55);backdrop-filter:blur(4px);
+  }
+  .mg-modal.is-on{display:grid}
+  .mg-modal__box{
+    background:var(--mg-surface);border-radius:20px;padding:28px;width:min(520px,94vw);
+    box-shadow:0 30px 70px rgba(0,0,0,.3);max-height:86vh;overflow:auto;
+  }
+  .mg-modal__box h3{color:var(--mg-plum-deep);font-size:19px}
+  .mg-modal__box p{font-size:13.5px;color:var(--mg-ink-soft);margin-top:10px}
+  .mg-modal__close{
+    float:right;border:0;background:var(--mg-tint);width:32px;height:32px;border-radius:50%;
+    color:var(--mg-plum-deep);font-size:16px;
+  }
+  .mg-form{display:flex;flex-direction:column;gap:12px;margin-top:16px}
+  .mg-form label{font-size:13px;font-weight:600;color:var(--mg-plum-deep)}
+  .mg-form input,.mg-form textarea,.mg-form select{
+    width:100%;padding:10px 13px;border-radius:10px;border:1px solid var(--mg-line);
+    font-family:inherit;font-size:14px;background:var(--mg-bg);color:var(--mg-ink);outline:none;
+  }
+  .mg-form input:focus,.mg-form textarea:focus{border-color:var(--mg-lilac)}
+  .mg-share-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+  .mg-share-row button{
+    border:1px solid var(--mg-line);background:var(--mg-surface);border-radius:999px;
+    padding:8px 16px;font-size:13px;color:var(--mg-plum-deep);
+  }
+  .mg-share-row button:hover{background:var(--mg-tint)}
+  /* 回到顶部 */
+  .mg-top{
+    position:fixed;right:22px;bottom:26px;z-index:90;width:46px;height:46px;border-radius:50%;
+    border:0;background:var(--mg-plum);color:#fff;font-size:18px;opacity:0;pointer-events:none;
+    transition:all .25s ease;box-shadow:0 10px 24px rgba(107,63,99,.35);
+  }
+  .mg-top.is-on{opacity:1;pointer-events:auto}
+  /* 锚点偏移 */
+  section[id]{scroll-margin-top:calc(var(--mg-head) + 18px)}
+  @media(max-width:1024px){
+    .mg-hero__grid{grid-template-columns:minmax(0,1fr);gap:30px}
+    .mg-hero__visual{order:-1}
+    .mg-focus,.mg-topic-grid,.mg-board-grid{grid-template-columns:minmax(0,1fr)}
+    .mg-author-grid,.mg-review-grid{grid-template-columns:minmax(0,1fr)}
+    .mg-footer__grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+    .mg-note-row{grid-template-columns:minmax(0,1fr)}
+  }
+  @media(max-width:900px){
+    .mg-nav,.mg-search{display:none}
+    .mg-burger{display:block}
+    .mg-header__tools{margin-left:auto}
+    .mg-vrow{grid-template-columns:minmax(0,1fr)}
+    .mg-vrow__thumb{max-width:260px}
+    .mg-partner-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .mg-cta{grid-template-columns:minmax(0,1fr);padding:30px}
+  }
+  @media(max-width:560px){
+    .mg-section{padding:44px 0}
+    .mg-hero__stats{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+    .mg-stat__num{font-size:21px}
+    .mg-author{grid-template-columns:52px minmax(0,1fr)}
+    .mg-avatar{width:52px;height:52px;font-size:18px}
+    .mg-footer__grid{grid-template-columns:minmax(0,1fr)}
+    .mg-notice__list{gap:20px}
+    .mg-news__row{grid-template-columns:minmax(0,1fr);gap:4px}
+  }
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="mg-sticky" id="mgTop">
+  <div class="mg-notice">
+    <div class="mg-wrap mg-notice__inner">
+      <span class="mg-notice__tag">官方发布</span>
+      <div class="mg-notice__list" id="mgNoticeList">
+        <span class="mg-notice__item">《丽柜美束写真》秋季企划「柔光·束影」正片上线，共 18 组高清影像</span>
+        <span class="mg-notice__item">创作者扶持计划第 04 期开放报名，投稿截止 11 月 30 日</span>
+        <span class="mg-notice__item">新增「束感造型」专题合集，收录 26 支幕后纪录视频</span>
+      </div>
+      <button class="mg-notice__close" id="mgNoticeClose" aria-label="关闭公告">✕</button>
+    </div>
+  </div>
+  <header class="mg-header">
+    <div class="mg-wrap mg-header__bar">
+      <a class="mg-brand" href="#mgTop" aria-label="丽柜美束写真 官方首页">
+        <span class="mg-brand__mark">丽</span>
+        <span class="mg-brand__text">
+          <span class="mg-brand__name">丽柜美束写真</span>
+          <span class="mg-brand__sub">OFFICIAL VIDEO PORTAL</span>
+        </span>
+      </a>
+      <nav class="mg-nav" aria-label="主导航">
+        <a class="mg-nav__link" href="#mgFocus">焦点影像</a>
+        <a class="mg-nav__link" href="#mgVideos">视频内容</a>
+        <a class="mg-nav__link" href="#mgTopics">专题企划</a>
+        <a class="mg-nav__link" href="#mgStory">品牌故事</a>
+        <a class="mg-nav__link" href="#mgAuthors">创作者</a>
+        <a class="mg-nav__link" href="#mgBoard">口碑榜</a>
+        <a class="mg-nav__link" href="#mgFaq">帮助</a>
+      </nav>
+      <div class="mg-header__tools">
+        <div class="mg-search">
+          <input class="mg-search__input" id="mgSearchInput" type="search" placeholder="搜索写真、造型、创作者" aria-label="站内搜索">
+          <button class="mg-search__btn" id="mgSearchBtn" aria-label="搜索">⌕</button>
+          <div class="mg-search__hint" id="mgSearchHint"></div>
+        </div>
+        <button class="mg-burger" id="mgBurger" aria-label="展开导航" aria-expanded="false">☰</button>
+      </div>
+    </div>
+    <div class="mg-mobile-nav mg-wrap" id="mgMobileNav">
+      <a href="#mgFocus">焦点影像</a>
+      <a href="#mgVideos">视频内容</a>
+      <a href="#mgTopics">专题企划</a>
+      <a href="#mgStory">品牌故事</a>
+      <a href="#mgAuthors">创作者</a>
+      <a href="#mgBoard">口碑榜</a>
+      <a href="#mgReviews">用户评价</a>
+      <a href="#mgFaq">帮助中心</a>
+      <a href="#mgSubmit">投稿入口</a>
+    </div>
+  </header>
+</div>
+
+<main>
+  <!-- HERO 4:6 -->
+  <section class="mg-hero" id="mgHero">
+    <div class="mg-wrap mg-hero__grid">
+      <div class="mg-hero__copy">
+        <p class="mg-hero__kicker">官方网站 · 原创高清人像影像</p>
+        <h1 class="mg-hero__title">丽柜美束写真</h1>
+        <p class="mg-hero__desc">作为深耕人像写真与美学影像领域的垂直品牌，丽柜美束写真官网致力于为企业、摄影师与创作者搭建高品质内容生态。我们以束感造型、柔光人像与真实情绪记录为核心，持续输出原创、正版、高清的精品内容，让每一次镜头前的克制与舒展，都成为值得被收藏的影像。平台坚持用户至上与匠心制作，用专业与口碑陪伴每一位热爱美学表达的人。</p>
+        <div class="mg-hero__actions">
+          <a class="mg-btn mg-btn--solid" href="#mgVideos">观看本季正片</a>
+          <a class="mg-btn mg-btn--ghost" href="#mgTopics">浏览专题企划</a>
+          <a class="mg-btn mg-btn--ghost" href="#mgSubmit">成为创作者</a>
+        </div>
+        <div class="mg-hero__stats">
+          <div class="mg-stat">
+            <div class="mg-stat__num" data-count="2680">0</div>
+            <div class="mg-stat__label">原创高清影像（组）</div>
+          </div>
+          <div class="mg-stat">
+            <div class="mg-stat__num" data-count="146">0</div>
+            <div class="mg-stat__label">签约创作者（位）</div>
+          </div>
+          <div class="mg-stat">
+            <div class="mg-stat__num" data-count="92">0</div>
+            <div class="mg-stat__label">用户好评率（%）</div>
+          </div>
+        </div>
+      </div>
+      <div class="mg-hero__visual">
+        <div class="mg-hero__frame">
+          <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 720 600'%3E%3Cdefs%3E%3ClinearGradient id='b' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%233a2739'/%3E%3Cstop offset='0.55' stop-color='%236b3f63'/%3E%3Cstop offset='1' stop-color='%23b392ac'/%3E%3C/linearGradient%3E%3CradialGradient id='l' cx='0.62' cy='0.28' r='0.5'%3E%3Cstop offset='0' stop-color='%23f7e3d6' stop-opacity='0.95'/%3E%3Cstop offset='1' stop-color='%23f7e3d6' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect width='720' height='600' fill='url(%23b)'/%3E%3Crect width='720' height='600' fill='url(%23l)'/%3E%3C!-- 光斑 --%3E%3Ccircle cx='560' cy='140' r='52' fill='%23f2d9c6' opacity='0.35'/%3E%3Ccircle cx='120' cy='470' r='80' fill='%23c99a4b' opacity='0.16'/%3E%3C!-- 束带结构 --%3E%3Cg stroke='%23e9d3e4' stroke-opacity='0.5' fill='none'%3E%3Cpath d='M260 90 C340 210 300 380 250 520' stroke-width='2.4'/%3E%3Cpath d='M300 70 C390 200 350 400 300 545' stroke-width='1.6'/%3E%3Cpath d='M430 80 C500 220 470 390 430 540' stroke-width='2'/%3E%3C/g%3E%3C!-- 人物剪影 --%3E%3Cg%3E%3Ccircle cx='400' cy='222' r='56' fill='%23e8c6b6'/%3E%3Cpath d='M400 168 c30 0 54 22 54 52 0 12 -4 24 -12 33 -6 -20 -22 -34 -42 -34 -20 0 -36 14 -42 34 -8 -9 -12 -21 -12 -33 0 -30 24 -52 54 -52z' fill='%232b1e2c'/%3E%3Cpath d='M312 600 c6 -120 40 -206 88 -206 48 0 82 86 88 206z' fill='%232f2030'/%3E%3Cpath d='M352 402 c26 -18 70 -18 96 0 l10 90 c-38 16 -78 16 -116 0z' fill='%23b392ac' opacity='0.55'/%3E%3C/g%3E%3C!-- 腰束 --%3E%3Cpath d='M330 500 h140' stroke='%23e07a5f' stroke-width='9' stroke-linecap='round' opacity='0.85'/%3E%3Crect x='386' y='490' width='28' height='20' rx='4' fill='%23c99a4b'/%3E%3Ctext x='46' y='556' fill='%23f2e7ef' font-family='sans-serif' font-size='19' letter-spacing='5' opacity='0.85'%3ESOFT · CORSET · SERIES%3C/text%3E%3C/svg%3E" alt="丽柜美束写真首屏主视觉：柔光下束感造型的人像剪影与飘带结构" width="720" height="600">
+        </div>
+        <div class="mg-hero__badge">
+          <strong>秋季企划「柔光·束影」</strong>
+          18 组原创高清影像 + 6 支幕后纪录，官方发布中
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S3 焦点内容 -->
+  <section class="mg-section" id="mgFocus">
+    <div class="mg-wrap">
+      <p class="mg-eyebrow">Focus / 焦点影像</p>
+      <h2 class="mg-h2">本周丽柜美束写真焦点推荐</h2>
+      <p class="mg-lead" style="margin-top:12px">从本季新片中挑选出最具代表性的影像，配合幕后讲解与创作者手记，构成丽柜美束写真官网本周的观看入口。所有内容均为原创正版高清，支持收藏与评论。</p>
+      <div class="mg-focus" style="margin-top:30px">
+        <article class="mg-focus__main">
+          <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 500'%3E%3Cdefs%3E%3ClinearGradient id='g1' x1='0' y1='1' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%23201824'/%3E%3Cstop offset='0.6' stop-color='%235c3a56'/%3E%3Cstop offset='1' stop-color='%23c99a4b'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='500' fill='url(%23g1)'/%3E%3Cpath d='M0 400 Q200 320 400 380 T800 340 V500 H0z' fill='%23352a38' opacity='0.8'/%3E%3Ccircle cx='250' cy='200' r='120' fill='%23f2d9c6' opacity='0.18'/%3E%3Crect x='330' y='120' width='160' height='300' rx='80' fill='%23e3c3b4' opacity='0.85'/%3E%3Crect x='352' y='140' width='116' height='260' rx='58' fill='%23c98f7a' opacity='0.5'/%3E%3Cpath d='M410 120 q18 -40 60 -30 q-14 26 -60 30z' fill='%232b1e2c'/%3E%3Cg stroke='%23f2d9c6' stroke-opacity='0.55' fill='none' stroke-width='2'%3E%3Cpath d='M200 60 C320 160 300 340 220 460'/%3E%3Cpath d='M600 50 C480 170 500 350 590 470'/%3E%3C/g%3E%3Ctext x='40' y='452' fill='%23f6ebf3' font-family='sans-serif' font-size='16' letter-spacing='4'%3ESERIES 01 — 束影%3C/text%3E%3C/svg%3E" alt="焦点内容封面：束影系列柔光人像与金色飘带构图" width="800" height="500">
+          <div class="mg-focus__meta">
+            <h3>柔光 · 束影｜第 01 组：把松弛感交给镜头</h3>
+            <p>本组以低饱和暖调为基调，用束带结构分割画面，让人物在克制与舒展之间切换。全片自然光拍摄，未做皮肤过度修饰。</p>
+            <div class="mg-focus__tagrow">
+              <span class="mg-chip">人像写真</span>
+              <span class="mg-chip">自然光</span>
+              <span class="mg-chip">幕后纪录</span>
+            </div>
+            <div class="mg-vitem__foot" style="color:rgba(255,255,255,.8)">
+              <span>创作：林知夏影像</span><span>播放 12.4 万</span><span>收藏 8,206</span>
+            </div>
+          </div>
+        </article>
+        <div class="mg-focus__list">
+          <article class="mg-vitem">
+            <div>
+              <h3 class="mg-vitem__title">束感造型入门：一条腰带的三种收束方式</h3>
+              <p class="mg-vitem__desc">从材质、宽度到打结位置，用 12 分钟讲清束感造型的基础逻辑，适合第一次尝试的你。</p>
+              <div class="mg-vitem__foot">
+                <span class="mg-vitem__tags"><span class="mg-chip">教程干货</span><span class="mg-chip">造型</span></span>
+                <span>· 顾南枝 · 播放 9.8 万</span>
+              </div>
+            </div>
+            <div class="mg-vitem__actions">
+              <button class="mg-act mg-like" data-like="0" aria-label="点赞">♡ <span>3126</span></button>
+              <button class="mg-act mg-fav" aria-label="收藏">收藏</button>
+            </div>
+          </article>
+          <article class="mg-vitem">
+            <div>
+              <h3 class="mg-vitem__title">城市天台写真：傍晚 17:40 的光最好说话</h3>
+              <p class="mg-vitem__desc">一次没有脚本的城市探索拍摄，记录了日落前后 40 分钟的色温变化与人物情绪。</p>
+              <div class="mg-vitem__foot">
+                <span class="mg-vitem__tags"><span class="mg-chip">城市探索</span><span class="mg-chip">治愈影像</span></span>
+                <span>· 阿青 · 播放 7.2 万</span>
+              </div>
+            </div>
+            <div class="mg-vitem__actions">
+              <button class="mg-act mg-like" data-like="0" aria-label="点赞">♡ <span>2018</span></button>
+              <button class="mg-act mg-fav" aria-label="收藏">收藏</button>
+            </div>
+          </article>
+          <article class="mg-vitem">
+            <div>
+              <h3 class="mg-vitem__title">从样片到成片：一组写真后期到底做了什么</h3>
+              <p class="mg-vitem__desc">完整展示色彩匹配、局部柔化与噪点保留的取舍，强调"不修掉真实"的后期原则。</p>
+              <div class="mg-vitem__foot">
+                <span class="mg-vitem__tags"><span class="mg-chip">创作幕后</span><span class="mg-chip">后期</span></span>
+                <span>· 沈砚 · 播放 6.5 万</span>
+              </div>
+            </div>
+            <div class="mg-vitem__actions">
+              <button class="mg-act mg-like" data-like="0" aria-label="点赞">♡ <span>1744</span></button>
+              <button class="mg-act mg-fav" aria-label="收藏">收藏</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S3 视频内容 文字列表 -->
+  <section class="mg-section mg-section--tight" id="mgVideos">
+    <div class="mg-wrap">
+      <p class="mg-eyebrow">Videos / 视频内容</p>
+      <h2 class="mg-h2">丽柜美束写真 · 本季视频内容索引</h2>
+      <p class="mg-lead" style="margin-top:12px">内容以文字索引为主，重点条目配缩略图。每条均标注作者、标签与互动数据，方便你按兴趣进入。</p>
+      <div class="mg-vlist">
+        <article class="mg-vrow">
+          <div>
+            <h3 class="mg-vrow__title">白衬衫与皮质束带：极简造型的冲突美学</h3>
+            <p class="mg-vrow__desc">用最基础的两件单品做造型对照实验，讲清"硬与软"的材质对撞如何影响画面气质，适合日常穿搭参考。</p>
+            <div class="mg-vrow__meta">
+              <span class="mg-chip">深度测评</span><span class="mg-chip">造型</span>
+              <span>顾南枝</span><span>播放 11.1 万</span><span>点赞 4,890</span><span>收藏 3,102</span>
+            </div>
+            <div class="mg-vitem__actions" style="flex-direction:row;justify-content:flex-start;margin-top:12px">
+              <button class="mg-act mg-like" data-like="0" aria-label="点赞">♡ <span>4890</span></button>
+              <button class="mg-act mg-fav" aria-label="收藏">收藏</button>
+              <button class="mg-act mg-comment" data-title="白衬衫与皮质束带：极简造型的冲突美学" aria-label="查看评论">评论 186</button>
+            </div>
+          </div>
+          <div class="mg-vrow__thumb">
+            <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 200'%3E%3Crect width='320' height='200' fill='%23efe4ee'/%3E%3Crect x='110' y='30' width='100' height='150' rx='48' fill='%23fbf6f9'/%3E%3Crect x='126' y='48' width='68' height='120' rx='34' fill='%23d8c3d3'/%3E%3Cpath d='M110 120 h100' stroke='%232b2233' stroke-width='11' stroke-linecap='round'/%3E%3Crect x='148' y='112' width='24' height='16' rx='3' fill='%23c99a4b'/%3E%3C/svg%3E" alt="白衬衫与皮质束带造型对撞示意图" width="320" height="200">
+          </div>
+        </article>
+        <article class="mg-vrow">
+          <div>
+            <h3 class="mg-vrow__title">摄影师访谈：为什么我坚持不磨皮</h3>
+            <p class="mg-vrow__desc">与签约摄影师聊了 40 分钟，关于毛孔、情绪与"可以老去的美"，是一期偏人物访谈的长内容。</p>
+            <div class="mg-vrow__meta">
+              <span class="mg-chip">人物访谈</span><span class="mg-chip">真实</span>
+              <span>沈砚</span><span>播放 8.7 万</span><span>点赞 3,640</span><span>收藏 2,915</span>
+            </div>
+            <div class="mg-vitem__actions" style="flex-direction:row;justify-content:flex-start;margin-top:12px">
+              <button class="mg-act mg-like" data-like="0" aria-label="点赞">♡ <span>3640</span></button>
+              <button class="mg-act mg-fav" aria-label="收藏">收藏</button>
+              <button class="mg-act mg-comment" data-title="摄影师访谈：为什么我坚持不磨皮" aria-label="查看评论">评论 274</button>
+            </div>
+          </div>
+          <div class="mg-vrow__thumb">
+            <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 200'%3E%3Crect width='320' height='200' fill='%23352a38'/%3E%3Ccircle cx='160' cy='86' r='38' fill='%23e3c3b4'/%3E%3Cpath d='M122 86 c0 -21 17 -38 38 -38 s38 17 38 38 -17 38 -38 38 -38 -17 -38 -38z' fill='none' stroke='%23c99a4b' stroke-width='3' stroke-dasharray='6 6'/%3E%3Crect x='95' y='140' width='130' height='12' rx='6' fill='%236b3f63'/%3E%3Crect x='120' y='164' width='80' height='8' rx='4' fill='%23b392ac'/%3E%3C/svg%3E" alt="摄影师访谈镜头与取景框图标" width="320" height="200">
+          </div>
+        </article>
+        <article class="mg-vrow">
+          <div>
+            <h3 class="mg-vrow__title">一个人的周末：在家拍一组安静的自画像</h3>
+            <p class="mg-vrow__desc">三脚架、一扇窗、一件旧衬衫。这是一支强调日常记录的轻教程，包含手机与相机两种参数方案。</p>
+            <div class="mg-vrow__meta">
+              <span class="mg-chip">日常记录</span><span class="mg-chip">实用技巧</span>
+              <span>林知夏影像</span><span>播放 6.9 万</span><span>点赞 2,780</span><span>收藏 2,431</span>
+            </div>
+            <div class="mg-vitem__actions" style="flex-direction:row;justify-content:flex-start;margin-top:12px">
+              <button class="mg-act mg-like" data-like="0" aria-label="点赞">♡ <span>2780</span></button>
+              <button class="mg-act mg-fav" aria-label="收藏">收藏</button>
+              <button class="mg-act mg-comment" data-title="一个人的周末：在家拍一组安静的自画像" aria-label="查看评论">评论 152</button>
+            </div>
+          </div>
+          <div class="mg-vrow__thumb">
+            <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 200'%3E%3Crect width='320' height='200' fill='%23f6ede6'/%3E%3Crect x='190' y='24' width='96' height='120' rx='6' fill='%23f2d9c6'/%3E%3Cpath d='M190 24 l96 0 l-40 60 l-56 0z' fill='%23e9b894' opacity='0.6'/%3E%3Crect x='40' y='70' width='90' height='110' rx='10' fill='%23c9b8c4'/%3E%3Ccircle cx='85' cy='112' r='20' fill='%23fbf6f9'/%3E%3Cpath d='M52 180 h66' stroke='%236b3f63' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E" alt="窗边自然光与相机支架的室内自画像布景" width="320" height="200">
+          </div>
+        </article>
+        <article class="mg-vrow">
+          <div>
+            <h3 class="mg-vrow__title">束带手工课：用旧衣料做一条独家腰封</h3>
+            <p class="mg-vrow__desc">手作 DIY 向内容，材料成本不到三十元，包含裁剪图与三种收边方式，适合兴趣同好动手尝试。</p>
+            <div class="mg-vrow__meta">
+              <span class="mg-chip">手作DIY</span><span class="mg-chip">兴趣同好</span>
+              <span>阿青</span><span>播放 5.4 万</span><span>点赞 2,102</span><span>收藏 1,988</span>
+            </div>
+            <div class="mg-vitem__actions" style="flex-direction:row;justify-content:flex-start;margin-top:12px">
+              <button class="mg-act mg-like" data-like="0" aria-label="点赞">♡ <span>2102</span></button>
+              <button class="mg-act mg-fav" aria-label="收藏">收藏</button>
+              <button class="mg-act mg-comment" data-title="束带手工课：用旧衣料做一条独家腰封" aria-label="查看评论">评论 98</button>
+            </div>
+          </div>
+          <div class="mg-vrow__thumb">
+            <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 200'%3E%3Crect width='320' height='200' fill='%23e7efe9'/%3E%3Cpath d='M50 140 q60 -70 120 0 q-60 40 -120 0z' fill='%23b9c9bd'/%3E%3Cpath d='M110 60 v70 M126 60 v70' stroke='%23c99a4b' stroke-width='3'/%3E%3Ccircle cx='242' cy='120' r='30' fill='none' stroke='%235c3a56' stroke-width='4' stroke-dasharray='5 7'/%3E%3Crect x='40' y='164' width='240' height='6' rx='3' fill='%2398a6c9' opacity='0.6'/%3E%3C/svg%3E" alt="旧衣料改造腰封的裁剪与收边示意图" width="320" height="200">
+          </div>
+        </article>
+        <article class="mg-vrow">
+          <div>
+            <h3 class="mg-vrow__title">镜头里的旧街区：用写真记录一座城的呼吸</h3>
+            <p class="mg-vrow__desc">在地文化题材，走访三条老街，把人物写真与城市空间结合，讨论"人的背景也是主角"。</p>
+            <div class="mg-vrow__meta">
+              <span class="mg-chip">在地文化</span><span class="mg-chip">城市探索</span>
+              <span>周野</span><span>播放 4.8 万</span><span>点赞 1,876</span><span>收藏 1,650</span>
+            </div>
+            <div class="mg-vitem__actions" style="flex-direction:row;justify-content:flex-start;margin-top:12px">
+              <button class="mg-act mg-like" data-like="0" aria-label="点赞">♡ <span>1876</span></button>
+              <button class="mg-act mg-fav" aria-label="收藏">收藏</button>
+              <button class="mg-act mg-comment" data-title="镜头里的旧街区：用写真记录一座城的呼吸" aria-label="查看评论">评论 121</button>
+            </div>
+          </div>
+          <div class="mg-vrow__thumb">
+            <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 200'%3E%3Crect width='320' height='200' fill='%23dfe6ee'/%3E%3Crect x='20' y='70' width='70' height='130' fill='%2398a6c9'/%3E%3Crect x='100' y='40' width='80' height='160' fill='%236b7fa3'/%3E%3Crect x='190' y='90' width='54' height='110' fill='%23b392ac'/%3E%3Crect x='252' y='60' width='48' height='140' fill='%23818fac'/%3E%3Cg fill='%23f6ede6' opacity='0.85'%3E%3Crect x='114' y='58' width='14' height='18'/%3E%3Crect x='146' y='58' width='14' height='18'/%3E%3Crect x='114' y='96' width='14' height='18'/%3E%3Crect x='146' y='96' width='14' height='18'/%3E%3Crect x='34' y='86' width='12' height='16'/%3E%3Crect x='56' y='86' width='12' height='16'/%3E%3C/g%3E%3Cpath d='M0 200 h320' stroke='%235c4f66' stroke-width='10'/%3E%3C/svg%3E" alt="旧街区楼体与窗格构成的城市写真背景" width="320" height="200">
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- S4 专题企划 -->
+  <section class="mg-section" id="mgTopics">
+    <div class="mg-wrap">
+      <p class="mg-eyebrow">Projects / 专题企划</p>
+      <h2 class="mg-h2">丽柜美束写真的长期专题</h2>
+      <p class="mg-lead" style="margin-top:12px">专题是品牌持续运营的核心方式。每个专题由固定创作者主理，按季度更新，形成可以连续观看的内容序列。</p>
+      <div class="mg-topic-grid">
+        <article class="mg-topic mg-card">
+          <span class="mg-topic__status">更新中 · 第 04 期</span>
+          <h3>柔光·束影 系列企划</h3>
+          <p>以自然光与束带结构为核心语言的季度影像企划，强调克制、真实与不过度修饰的人像质感。</p>
+          <ul>
+            <li>第 01 组：把松弛感交给镜头</li>
+            <li>第 02 组：旧衣料与硬质腰封</li>
+            <li>第 03 组：傍晚天台的最后一束光</li>
+          </ul>
+        </article>
+        <article class="mg-topic mg-card">
+          <span class="mg-topic__status">已完结 · 共 26 支</span>
+          <h3>束感造型幕后全纪录</h3>
+          <p>从选料、试装到成片，完整记录一条腰封在镜头前的生产链路，是造型爱好者的入门合集。</p>
+          <ul>
+            <li>材料篇：五类束带的手感差异</li>
+            <li>试装篇：体型与收束位置的对照</li>
+            <li>成片篇：同款造型的三种光线</li>
+          </ul>
+        </article>
+        <article class="mg-topic mg-card">
+          <span class="mg-topic__status">报名中 · 11 月 30 日截止</span>
+          <h3>创作者扶持计划 04 期</h3>
+          <p>面向人像与美学方向的创作者开放报名，入选者获得拍摄场地、器材与官方发布资源支持。</p>
+          <ul>
+            <li>提交 3 组原创写真与创作说明</li>
+            <li>评审关注真实情绪与叙事完整度</li>
+            <li>入选内容进入官网精品内容池</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- S4/M15 品牌故事 + 关键词解析 -->
+  <section class="mg-section mg-section--tight" id="mgStory">
+    <div class="mg-wrap">
+      <p class="mg-eyebrow">Brand / 品牌故事</p>
+      <h2 class="mg-h2">关于丽柜美束写真：一个关于收束与舒展的品牌故事</h2>
+      <p class="mg-lead" style="margin-top:12px">丽柜美束写真并非一家只拍漂亮照片的工作室，而是一个以人像写真为入口、持续经营内容生态的影像品牌。下面四个切面，构成了我们对"丽柜美束写真"这个名字的完整解释。</p>
+      <div class="mg-parse">
+        <div class="mg-parse__block mg-card">
+          <h3>一、名字的来历：丽、柜、束三个字的分工</h3>
+          <p>"丽"指向审美取向，我们追求的是干净、耐看、经得起反复观看的影像，而不是一次性冲击力。"柜"是收藏的意思，丽柜美束写真官网上的每一组作品都会进入可检索的影像档案，按年份、造型、光线条件归档，用户可以像翻档案柜一样找到自己想看的内容。"束"则是造型语言的核心，束带、腰封、收束的结构感，是我们最常使用也最愿意深挖的视觉母题。</p>
+          <p>这三个字组合在一起，说明我们对品牌的理解是：有审美判断、有收藏价值、有明确视觉标识。作为深耕人像写真的垂直领域品牌，我们不追求覆盖所有题材，而是把一个方向做深，让"丽柜美束写真"这五个字在用户心里对应一种可辨识的影像气质。这种气质不是靠滤镜堆出来的，而是靠一次次拍摄中关于光线、距离与呼吸的耐心选择累积起来的。</p>
+          <p>很多第一次来到官网的用户会问，为什么你们的作品看起来"没那么用力"。这其实是有意为之。我们在拍摄现场最常说的话是"慢一点"，让被摄者有时间适应镜头，让摄影师有时间观察真实的情绪流动。写真不是表演，它更接近一次被允许的注视。丽柜美束写真希望提供的，正是这种被认真注视的体验，以及由此产生的、可以长期保存的影像。</p>
+        </div>
+        <div class="mg-parse__block mg-card">
+          <h3>二、内容生态：创作者、企业与用户的三方关系</h3>
+          <p>丽柜美束写真官网的内容生态由三方共同构成。第一方是签约与入驻的创作者，他们提供原创影像与幕后纪录，是内容生态的源头活水。第二方是品牌与企业自身，我们负责制定内容标准、提供拍摄资源、组织专题企划，并对所有官方发布的内容做正版与品质把关。第三方是用户，他们的收藏、评论与投稿反馈，决定了下一次企划的方向。</p>
+          <p>我们为创作者提供的支持相当具体：每季度开放固定的拍摄档期，提供柔光棚与自然光外景两类场地，配备造型与后期协作人员。作为交换，创作者需要保证内容的原创性与更新节奏。这套机制运行了两年多，目前已有 146 位创作者参与，累计产出 2680 组原创高清影像。数据的意义不在于规模，而在于它证明了这种"慢而稳定"的生产方式是可以持续的。</p>
+          <p>用户端我们坚持不做过度打扰。官网上没有自动播放的弹窗，没有强迫关注的浮层，评论区保留不同意见。我们相信一个内容生态的健康程度，取决于它是否允许用户安静地观看。丽柜美束写真希望成为一个"可以待得住"的地方，而不是一个只追求点击的地方。这也是我们反复强调用户至上与口碑积累的原因——口碑不是营销话术，而是长期不打扰换来的信任。</p>
+        </div>
+        <div class="mg-parse__block mg-card">
+          <h3>三、影像方法：我们如何拍一组人像写真</h3>
+          <p>一组完整的丽柜美束写真通常经历四个阶段。第一阶段是沟通与设定，我们会花半小时以上和被摄者聊生活、聊穿着习惯、聊不喜欢的角度，这些信息决定最终的造型方向。第二阶段是试装与光位测试，束带的位置、松紧、打结方式都要在真实光线下确认，因为同一条腰封在不同色温下的质感差异非常大。</p>
+          <p>第三阶段是正式拍摄，我们倾向于使用较长焦段与较大光圈，保持与被摄者之间一个不具压迫感的距离。自然光优先，必要时用反光板补一点柔和的漫反射，尽量不用强闪。第四阶段是后期，原则是"修掉干扰，不修掉真实"：清理杂乱的背景细节、统一色彩关系，但保留皮肤纹理与自然的明暗过渡。我们认为毛孔、细纹与不完美的轮廓，恰恰是影像可信度的来源。</p>
+          <p>这套方法并不神秘，难的是每次都认真执行。很多用户评价里提到"看起来像真的有人在拍照"，这其实是对我们工作方式最直接的肯定。丽柜美束写真不追求让照片变成另一个人的样子，而是希望帮助每个人看到自己更舒展的那一面。写真行业发展到今天，技术门槛已经不高，真正稀缺的是耐心与尊重，这也是我们愿意在官网把这些方法公开写出来的原因。</p>
+        </div>
+        <div class="mg-parse__block mg-card">
+          <h3>四、社会责任与未来：让写真行业更透明一点</h3>
+          <p>丽柜美束写真在经营之外，也在尝试做一些行业层面的基础工作。我们公开了拍摄流程、收费标准与后期原则，希望减少信息不对称带来的焦虑；我们为初次拍摄的用户提供"拍摄前须知"文档，明确哪些要求是可以提的，哪些是超出边界的。这些看起来琐碎，但对很多第一次走进摄影棚的人来说，是重要的安全感来源。</p>
+          <p>未来一年，我们计划把专题企划扩展到更多城市，与在地创作者合作记录不同地域的影像气质；同时升级官网的检索与收藏功能，让 2680 组影像真正成为可用的档案，而不只是陈列。我们也会继续运营创作者扶持计划，把资源投向那些愿意慢下来的人。作为一家持续运营的影像品牌，丽柜美束写真希望留下的不只是照片，还有一套关于如何认真对待影像的工作方法。</p>
+          <p>如果你也认同这种价值取向，欢迎通过官网的投稿入口与我们联系。无论是创作者、品牌合作方，还是只是想拍一组属于自己写真的人，我们都愿意先聊一聊，再决定要不要按下快门。丽柜美束写真相信，好的影像从一次诚实的对话开始。</p>
+        </div>
+      </div>
+      <div class="mg-note-row">
+        <div class="mg-note mg-card">
+          <h4>我们的坚持</h4>
+          <p>原创、正版、高清三项底线不妥协，所有官方发布内容均标注创作者与拍摄信息，可追溯来源。</p>
+        </div>
+        <div class="mg-note mg-card">
+          <h4>我们的节奏</h4>
+          <p>每季度一个主专题，每月更新幕后纪录，每周推荐焦点影像，用稳定节奏陪伴用户长期观看。</p>
+        </div>
+        <div class="mg-note mg-card">
+          <h4>我们的伙伴</h4>
+          <p>与造型、器材、场地等垂直领域伙伴长期合作，共同降低优质写真的创作门槛。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S5 作者矩阵 双列简介 -->
+  <section class="mg-section" id="mgAuthors">
+    <div class="mg-wrap">
+      <p class="mg-eyebrow">Creators / 创作者</p>
+      <h2 class="mg-h2">丽柜美束写真签约创作者名录</h2>
+      <p class="mg-lead" style="margin-top:12px">他们来自不同背景，有人像摄影师、造型师、手作人，也有专注城市记录的自由创作者。点击作者卡片可查看简介。</p>
+      <div class="mg-author-grid">
+        <article class="mg-author mg-card mg-author-card" data-author="林知夏" data-bio="林知夏影像，人像摄影师，擅长自然光与室内柔光控制，强调不磨皮的真实质感。代表作为柔光·束影系列第 01 组，拍摄风格安静克制，常使用较长焦段保持与被摄者的舒适距离，是丽柜美束写真官网自然光方向的代表性创作者。">
+          <div class="mg-avatar mg-avatar--1">林</div>
+          <div>
+            <h3 class="mg-author__name">林知夏影像 <span class="mg-chip">官方签约</span></h3>
+            <p class="mg-author__field">擅长：自然光人像 / 室内柔光</p>
+            <div class="mg-author__nums"><span>作品 128</span><span>粉丝 4.6 万</span></div>
+            <p class="mg-author__bio">林知夏影像专注自然光人像创作，主张以克制的方式记录真实情绪。拍摄前习惯与被摄者长谈，用耐心换取镜头前的松弛感，是柔光·束影系列的主理人。</p>
+          </div>
+        </article>
+        <article class="mg-author mg-card mg-author-card" data-author="顾南枝" data-bio="顾南枝，造型师与束感造型研究者，擅长用腰封、束带等结构元素重构日常穿搭。她的教程视频以细节清晰、材料解释充分著称，长期更新束感造型入门与进阶内容，作品强调硬与软的材质对撞，是丽柜美束写真造型方向的骨干创作者。">
+          <div class="mg-avatar mg-avatar--2">顾</div>
+          <div>
+            <h3 class="mg-author__name">顾南枝 <span class="mg-chip">造型主理</span></h3>
+            <p class="mg-author__field">擅长：束感造型 / 材质搭配</p>
+            <div class="mg-author__nums"><span>作品 96</span><span>粉丝 3.8 万</span></div>
+            <p class="mg-author__bio">顾南枝是束感造型研究者，擅长用一条腰带改变整套穿搭的气质。她的内容注重可操作性，每条教程都附带材料清单与失败案例，风格直率、不绕弯子。</p>
+          </div>
+        </article>
+        <article class="mg-author mg-card mg-author-card" data-author="沈砚" data-bio="沈砚，摄影师与后期指导，主张修掉干扰而不修掉真实的后期原则。他擅长色彩匹配与局部柔化，作品在保留皮肤纹理与明暗过渡方面有鲜明辨识度，长期在丽柜美束写真官网更新后期幕后与访谈内容，是平台真实影像方向的重要声音。">
+          <div class="mg-avatar mg-avatar--3">沈</div>
+          <div>
+            <h3 class="mg-author__name">沈砚 <span class="mg-chip">后期指导</span></h3>
+            <p class="mg-author__field">擅长：后期调色 / 影像访谈</p>
+            <div class="mg-author__nums"><span>作品 74</span><span>粉丝 3.1 万</span></div>
+            <p class="mg-author__bio">沈砚负责平台后期标准制定，坚持保留皮肤纹理与自然明暗过渡。他的访谈内容直白坦率，讨论过毛孔、细纹与"可以老去的美"等话题，引发大量讨论。</p>
+          </div>
+        </article>
+        <article class="mg-author mg-card mg-author-card" data-author="周野" data-bio="周野，自由摄影师与城市记录者，专注在地文化与旧街区题材。他用写真记录城市空间与人的关系，强调背景也是主角。作品常以低饱和色调呈现街区质感，长期参与丽柜美束写真的城市探索专题，是地域影像方向的代表创作者。">
+          <div class="mg-avatar mg-avatar--4">周</div>
+          <div>
+            <h3 class="mg-author__name">周野 <span class="mg-chip">城市记录</span></h3>
+            <p class="mg-author__field">擅长：在地文化 / 街景人像</p>
+            <div class="mg-author__nums"><span>作品 68</span><span>粉丝 2.7 万</span></div>
+            <p class="mg-author__bio">周野用写真记录城市空间与人的关系，认为背景同样需要被认真对待。他长期走访旧街区，作品色调低调克制，为平台带来大量在地文化方向的关注。</p>
+          </div>
+        </article>
+        <article class="mg-author mg-card mg-author-card" data-author="阿青" data-bio="阿青，手作人与生活方式创作者，擅长旧衣料改造与低成本造型方案。她的束带手工课用不到三十元的材料完成完整腰封制作，包含裁剪图与三种收边方式，内容亲切实用，是丽柜美束写真兴趣同好方向最受欢迎的创作者之一。">
+          <div class="mg-avatar mg-avatar--1">青</div>
+          <div>
+            <h3 class="mg-author__name">阿青 <span class="mg-chip">手作达人</span></h3>
+            <p class="mg-author__field">擅长：旧物改造 / 生活方式</p>
+            <div class="mg-author__nums"><span>作品 82</span><span>粉丝 2.9 万</span></div>
+            <p class="mg-author__bio">阿青擅长把旧衣料变成独特的造型单品，材料成本低、步骤清楚。她相信手作的乐趣在于过程而非结果，内容里常有失败重来的片段，亲切而有陪伴感。</p>
+          </div>
+        </article>
+        <article class="mg-author mg-card mg-author-card" data-author="程屿" data-bio="程屿，品牌内容策划，负责丽柜美束写真专题企划的选题与组织。他擅长把单支影像串成有层次的季度专题，关注内容生态的长期健康，主张用稳定的更新节奏而非爆款思维经营官网内容，是平台精品内容方向的主要推动者。">
+          <div class="mg-avatar mg-avatar--2">程</div>
+          <div>
+            <h3 class="mg-author__name">程屿 <span class="mg-chip">内容策划</span></h3>
+            <p class="mg-author__field">擅长：专题企划 / 内容生态</p>
+            <div class="mg-author__nums"><span>作品 54</span><span>粉丝 1.9 万</span></div>
+            <p class="mg-author__bio">程屿负责把零散的影像串成有层次的季度专题，主张用稳定节奏经营内容而非追逐爆款。他策划的柔光·束影企划已成为平台最具辨识度的长期项目。</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- S6 榜单 + 评价 -->
+  <section class="mg-section mg-section--tight" id="mgBoard">
+    <div class="mg-wrap">
+      <p class="mg-eyebrow">Ranking / 口碑榜</p>
+      <h2 class="mg-h2">丽柜美束写真数据榜单与用户评价</h2>
+      <p class="mg-lead" style="margin-top:12px">榜单按近 30 天数据统计，评价来自真实观看用户，我们保留不同声音，不做筛选式呈现。</p>
+      <div class="mg-board-grid">
+        <div class="mg-board mg-card">
+          <h3>热度榜 · 近 30 天</h3>
+          <ol>
+            <li><span class="rank">01</span><span class="vt">柔光·束影 第 01 组</span><span class="vv">12.4 万</span></li>
+            <li><span class="rank">02</span><span class="vt">白衬衫与皮质束带</span><span class="vv">11.1 万</span></li>
+            <li><span class="rank">03</span><span class="vt">摄影师访谈：不磨皮</span><span class="vv">8.7 万</span></li>
+            <li><span class="rank">04</span><span class="vt">城市天台写真</span><span class="vv">7.2 万</span></li>
+            <li><span class="rank">05</span><span class="vt">一个人的周末自画像</span><span class="vv">6.9 万</span></li>
+            <li><span class="rank">06</span><span class="vt">后期到底做了什么</span><span class="vv">6.5 万</span></li>
+          </ol>
+        </div>
+        <div class="mg-board mg-card">
+          <h3>新人榜 · 本月</h3>
+          <ol>
+            <li><span class="rank">01</span><span class="vt">肉桂不甜 · 素颜写真</span><span class="vv">1.2 万</span></li>
+            <li><span class="rank">02</span><span class="vt">阿岚 · 逆光实验</span><span class="vv">9,840</span></li>
+            <li><span class="rank">03</span><span class="vt">木木 · 旧衣新穿</span><span class="vv">8,120</span></li>
+            <li><span class="rank">04</span><span class="vt">小满 · 楼道光影</span><span class="vv">7,650</span></li>
+            <li><span class="rank">05</span><span class="vt">青禾 · 束带日记</span><span class="vv">6,930</span></li>
+            <li><span class="rank">06</span><span class="vt">南屿 · 一次外拍</span><span class="vv">5,470</span></li>
+          </ol>
+        </div>
+        <div class="mg-board mg-card">
+          <h3>口碑榜 · 综合评分</h3>
+          <ol>
+            <li><span class="rank">01</span><span class="vt">束感造型入门教程</span><span class="vv">4.9</span></li>
+            <li><span class="rank">02</span><span class="vt">柔光·束影第 02 组</span><span class="vv">4.8</span></li>
+            <li><span class="rank">03</span><span class="vt">后期原则公开课</span><span class="vv">4.8</span></li>
+            <li><span class="rank">04</span><span class="vt">旧街区城市记录</span><span class="vv">4.7</span></li>
+            <li><span class="rank">05</span><span class="vt">束带手工课</span><span class="vv">4.7</span></li>
+            <li><span class="rank">06</span><span class="vt">创作者扶持计划答疑</span><span class="vv">4.6</span></li>
+          </ol>
+        </div>
+      </div>
+      <div class="mg-review-grid" id="mgReviews">
+        <article class="mg-review mg-card">
+          <div class="mg-review__head">
+            <div class="mg-review__who"><span class="mg-avatar mg-avatar--3">苏</span>苏叶</div>
+            <div class="mg-stars">★★★★★</div>
+          </div>
+          <p>第一次拍写真就是在这里约的，沟通环节比我想象中长很多，摄影师会一直问我哪里不自在。成片出来我愣了一下，那确实是我，但比我平时舒展。收藏夹里现在全是丽柜美束写真的片子。</p>
+          <div class="mg-review__date">2026-11-18</div>
+        </article>
+        <article class="mg-review mg-card">
+          <div class="mg-review__head">
+            <div class="mg-review__who"><span class="mg-avatar mg-avatar--1">陈</span>陈述</div>
+            <div class="mg-stars">★★★★☆</div>
+          </div>
+          <p>作为同行来看，他们的后期确实克制，保留纹理这点我很认同。唯一想提的意见是官网检索还不够细，想按光线条件筛片不太方便，希望后续版本能加上。</p>
+          <div class="mg-review__date">2026-11-15</div>
+        </article>
+        <article class="mg-review mg-card">
+          <div class="mg-review__head">
+            <div class="mg-review__who"><span class="mg-avatar mg-avatar--2">竹</span>竹间</div>
+            <div class="mg-stars">★★★★★</div>
+          </div>
+          <p>顾南枝的教程救了我。以前一直觉得腰封是瘦子专属，看完她讲位置和松紧那期，发现是我一直系错了。现在衣柜里三条腰封轮着用，日常上班也能穿。</p>
+          <div class="mg-review__date">2026-11-12</div>
+        </article>
+        <article class="mg-review mg-card">
+          <div class="mg-review__head">
+            <div class="mg-review__who"><span class="mg-avatar mg-avatar--4">何</span>何以</div>
+            <div class="mg-stars">★★★☆☆</div>
+          </div>
+          <p>内容质量没得说，但季度专题之间的等待期有点长，中间会断更感。另外希望幕后纪录能多一些失败的片段，现在剪得还是偏顺，少了点真实的毛边。</p>
+          <div class="mg-review__date">2026-11-09</div>
+        </article>
+        <article class="mg-review mg-card">
+          <div class="mg-review__head">
+            <div class="mg-review__who"><span class="mg-avatar mg-avatar--1">温</span>温禾</div>
+            <div class="mg-stars">★★★★★</div>
+          </div>
+          <p>沈砚那期访谈看哭了。三十岁以后我一直在修照片里的细纹，看完之后把修图软件关了。丽柜美束写真愿意公开讨论这些，是很有勇气也很温暖的事。</p>
+          <div class="mg-review__date">2026-11-06</div>
+        </article>
+        <article class="mg-review mg-card">
+          <div class="mg-review__head">
+            <div class="mg-review__who"><span class="mg-avatar mg-avatar--2">简</span>简宁</div>
+            <div class="mg-stars">★★★★☆</div>
+          </div>
+          <p>手作那期材料清单很详细，我照着做了一条，成本二十八。做坏两次才成功，但过程真的挺治愈。建议以后能出个图文步骤页，视频来回拖进度有点累。</p>
+          <div class="mg-review__date">2026-11-03</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- S7 企业动态 + 合作品牌 -->
+  <section class="mg-section mg-section--tight" id="mgNews">
+    <div class="mg-wrap">
+      <p class="mg-eyebrow">Updates / 企业动态</p>
+      <h2 class="mg-h2">丽柜美束写真官方发布与更新日志</h2>
+      <div class="mg-news" style="margin-top:24px">
+        <div class="mg-news__row">
+          <span class="mg-news__date">2026-11-20</span>
+          <div>
+            <h4>秋季企划「柔光·束影」第 03、04 组正式上线</h4>
+            <p>两组新片共 9 支影像，均由林知夏影像主拍，自然光外景占比提升至 70%，支持高清下载与收藏。</p>
+          </div>
+        </div>
+        <div class="mg-news__row">
+          <span class="mg-news__date">2026-11-14</span>
+          <div>
+            <h4>创作者扶持计划第 04 期开放报名</h4>
+            <p>本期新增场地支持名额 12 个，报名需提交 3 组原创写真与创作说明，评审结果将于 12 月 10 日公布。</p>
+          </div>
+        </div>
+        <div class="mg-news__row">
+          <span class="mg-news__date">2026-11-07</span>
+          <div>
+            <h4>官网影像档案完成年度整理</h4>
+            <p>2680 组影像按年份、造型、光线条件重新归档，检索速度提升，后续将开放按色温筛选功能。</p>
+          </div>
+        </div>
+        <div class="mg-news__row">
+          <span class="mg-news__date">2026-10-28</span>
+          <div>
+            <h4>「真实影像」圆桌讨论会实录发布</h4>
+            <p>四位创作者围绕磨皮与真实展开对话，实录已剪为三支短片，进入精品内容池，可在视频区观看。</p>
+          </div>
+        </div>
+      </div>
+      <div class="mg-partner-grid">
+        <div class="mg-partner">绫光器材<small>器材合作</small></div>
+        <div class="mg-partner">南窗影棚<small>场地合作</small></div>
+        <div class="mg-partner">织间面料<small>造型材料</small></div>
+        <div class="mg-partner">慢显后期<small>后期协作</small></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S7 FAQ -->
+  <section class="mg-section" id="mgFaq">
+    <div class="mg-wrap">
+      <p class="mg-eyebrow">FAQ / 帮助中心</p>
+      <h2 class="mg-h2">关于丽柜美束写真官网的常见问题</h2>
+      <div class="mg-faq">
+        <details open>
+          <summary>如何预约一组丽柜美束写真？</summary>
+          <p>请通过页面底部的投稿与联系入口提交需求，注明希望的拍摄方向、可用时间与所在城市。我们会在两个工作日内回复，并安排一次不超过二十分钟的初步沟通，确认方向后再进入试装与拍摄排期。</p>
+        </details>
+        <details>
+          <summary>官网上的影像可以下载或二次使用吗？</summary>
+          <p>标注"官方发布"的原创高清影像可在保留水印与来源说明的前提下用于个人分享。商业用途、二次剪辑或再发布，需要获得品牌与创作者的书面许可。我们坚持正版原则，也请用户尊重创作者的劳动。</p>
+        </details>
+        <details>
+          <summary>成为签约创作者需要满足什么条件？</summary>
+          <p>至少提交 3 组完整的原创写真，包含拍摄说明与后期思路；有稳定更新意愿；认同平台关于真实与克制的影像原则。审核不看重粉丝数量，更关注叙事完整度和对细节的处理能力。</p>
+        </details>
+        <details>
+          <summary>你们真的不磨皮吗？皮肤瑕疵会保留到什么程度？</summary>
+          <p>我们保留皮肤纹理与自然明暗过渡，会清理临时性瑕疵如衣物褶皱或背景杂物，但不会抹平毛孔与结构性细纹。这是平台的后期原则，也是"影像可信任"的基础，接受度因人而异，我们尊重每个人的选择。</p>
+        </details>
+        <details>
+          <summary>专题企划的更新频率是怎样的？</summary>
+          <p>主专题按季度更新，通常在季初上线新的一组影像；幕后纪录每月更新一次；焦点推荐每周一次。更新节奏会在公告条与企业动态中提前发布，用户可以据此安排观看。</p>
+        </details>
+        <details>
+          <summary>拍摄费用如何计算，会有隐藏收费吗？</summary>
+          <p>官网公开基础拍摄与造型协作的收费区间，超出部分需在沟通阶段明确列出。我们不设置后期加价的隐性条款，任何新增项目都会在拍摄前以书面形式确认，这也是平台口碑积累的重要原因。</p>
+        </details>
+        <details>
+          <summary>如果我拍完后对成片不满意怎么办？</summary>
+          <p>拍摄结束后的七天内可提出一次修整沟通，针对色彩、裁剪与清理类问题进行调整。若属于造型方向分歧，我们会在沟通阶段尽量前置解决。用户的真实反馈会被记录，用于改进后续服务。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- S7 投稿 CTA -->
+  <section class="mg-section mg-section--tight" id="mgSubmit">
+    <div class="mg-wrap">
+      <div class="mg-cta">
+        <div>
+          <h2>把你的影像带进丽柜美束写真的内容生态</h2>
+          <p>无论你是创作者、品牌合作方，还是想拍一组属于自己写真的人，都欢迎投稿与联系我们。原创正版、真实克制，是我们共同的前提。提交后两个工作日内会收到回复。</p>
+        </div>
+        <div style="display:flex;gap:12px;flex-wrap:wrap">
+          <button class="mg-btn mg-btn--solid" id="mgSubmitBtn">投稿与联系</button>
+          <button class="mg-btn mg-btn--ghost" id="mgShareBtn" style="border-color:rgba(255,255,255,.5);color:#fff">分享官网</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="mg-footer">
+  <div class="mg-wrap">
+    <div class="mg-footer__grid">
+      <div>
+        <div class="mg-footer__brand"><span class="mg-brand__mark" style="width:34px;height:34px;font-size:15px;border-radius:10px">丽</span>丽柜美束写真</div>
+        <p class="mg-footer__desc">丽柜美束写真官方网站，专注原创高清人像写真与美学影像，以专业与匠心持续运营品质内容生态，与创作者、用户共同成长。</p>
+      </div>
+      <div>
+        <h4>内容</h4>
+        <a href="#mgFocus">焦点影像</a>
+        <a href="#mgVideos">视频内容</a>
+        <a href="#mgTopics">专题企划</a>
+        <a href="#mgBoard">数据榜单</a>
+      </div>
+      <div>
+        <h4>关于</h4>
+        <a href="#mgStory">品牌故事</a>
+        <a href="#mgAuthors">创作者名录</a>
+        <a href="#mgNews">企业动态</a>
+        <a href="#mgFaq">帮助中心</a>
+      </div>
+      <div>
+        <h4>参与</h4>
+        <a href="#mgSubmit">投稿入口</a>
+        <a href="#mgSubmit">品牌合作</a>
+        <a href="#mgReviews">用户评价</a>
+        <a href="#mgHero">返回首屏</a>
+      </div>
+    </div>
+    <div class="mg-footer__bottom">
+      <span>© 2026 丽柜美束写真 · 官方网站 · 版权所有 · 持续运营中</span>
+      <span>备案号：美ICP备 2026-0921 号 · 原创正版 · 高清品质 · 用户至上</span>
+    </div>
+  </div>
+</footer>
+
+<button class="mg-top" id="mgTopBtn" aria-label="回到顶部">↑</button>
+<div class="mg-toast" id="mgToast" role="status" aria-live="polite"></div>
+
+<div class="mg-modal" id="mgSubmitModal" aria-hidden="true">
+  <div class="mg-modal__box" role="dialog" aria-modal="true" aria-label="投稿与联系">
+    <button class="mg-modal__close" data-close="mgSubmitModal" aria-label="关闭">✕</button>
+    <h3>投稿与联系 · 丽柜美束写真</h3>
+    <p>请填写基本信息，我们会在两个工作日内回复。</p>
+    <form class="mg-form" id="mgSubmitForm">
+      <div>
+        <label for="mgFormName">称呼</label>
+        <input id="mgFormName" name="name" type="text" placeholder="怎么称呼你" required>
+      </div>
+      <div>
+        <label for="mgFormType">类型</label>
+        <select id="mgFormType" name="type">
+          <option>创作者投稿</option>
+          <option>预约写真</option>
+          <option>品牌合作</option>
+          <option>问题反馈</option>
+        </select>
+      </div>
+      <div>
+        <label for="mgFormMsg">内容说明</label>
+        <textarea id="mgFormMsg" name="msg" rows="4" placeholder="简单介绍你的作品方向或需求，附上可查看的作品链接更佳"></textarea>
+      </div>
+      <button class="mg-btn mg-btn--solid" type="submit">提交</button>
+    </form>
+  </div>
+</div>
+
+<div class="mg-modal" id="mgCommentModal" aria-hidden="true">
+  <div class="mg-modal__box" role="dialog" aria-modal="true" aria-label="评论">
+    <button class="mg-modal__close" data-close="mgCommentModal" aria-label="关闭">✕</button>
+    <h3 id="mgCommentTitle">评论</h3>
+    <p>精选评论展示，欢迎留下你的观看感受。</p>
+    <div style="margin-top:14px;display:flex;flex-direction:column;gap:12px;font-size:13.5px;color:var(--mg-ink-soft)">
+      <p><b style="color:var(--mg-plum-deep)">半夏：</b>光影处理得真好，看完想立刻去拍一组。</p>
+      <p><b style="color:var(--mg-plum-deep)">林间：</b>喜欢这种不磨皮的态度，真实又克制。</p>
+      <p><b style="color:var(--mg-plum-deep)">宋小舟：</b>求同款束带的购买建议，教程里没讲品牌。</p>
+    </div>
+  </div>
+</div>
+
+<div class="mg-modal" id="mgAuthorModal" aria-hidden="true">
+  <div class="mg-modal__box" role="dialog" aria-modal="true" aria-label="作者简介">
+    <button class="mg-modal__close" data-close="mgAuthorModal" aria-label="关闭">✕</button>
+    <h3 id="mgAuthorModalName">创作者</h3>
+    <p id="mgAuthorModalBio"></p>
+    <div class="mg-share-row">
+      <button class="mg-copy" data-copy="丽柜美束写真 · 创作者介绍">复制创作者链接</button>
+    </div>
+  </div>
+</div>
+
+<div class="mg-modal" id="mgShareModal" aria-hidden="true">
+  <div class="mg-modal__box" role="dialog" aria-modal="true" aria-label="分享">
+    <button class="mg-modal__close" data-close="mgShareModal" aria-label="关闭">✕</button>
+    <h3>分享丽柜美束写真官网</h3>
+    <p>选择一种方式分享给朋友，或直接复制页面链接。</p>
+    <div class="mg-share-row">
+      <button class="mg-copy" data-copy="丽柜美束写真 · 官方网站">复制链接</button>
+      <button class="mg-share-tip" data-tip="已生成微信分享提示，请粘贴给好友">微信</button>
+      <button class="mg-share-tip" data-tip="已生成微博分享提示，请粘贴发布">微博</button>
+      <button class="mg-share-tip" data-tip="已生成 QQ 分享提示，请粘贴发送">QQ</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---------- 吸顶高度 → 锚点偏移 ---------- */
+  var sticky = document.getElementById("mgTop");
+  function syncHeadOffset(){
+    if(!sticky) return;
+    var h = sticky.offsetHeight;
+    document.documentElement.style.setProperty("--mg-head", h + "px");
+  }
+  syncHeadOffset();
+  window.addEventListener("resize", syncHeadOffset);
+  window.addEventListener("load", syncHeadOffset);
+
+  /* ---------- Toast ---------- */
+  var toast = document.getElementById("mgToast");
+  var toastTimer = null;
+  function showToast(msg){
+    if(!toast) return;
+    toast.textContent = msg;
+    toast.classList.add("is-on");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toast.classList.remove("is-on"); }, 2400);
+  }
+
+  /* ---------- 公告关闭 ---------- */
+  var noticeClose = document.getElementById("mgNoticeClose");
+  if(noticeClose){
+    noticeClose.addEventListener("click", function(){
+      var bar = document.querySelector(".mg-notice");
+      if(bar){ bar.style.display = "none"; syncHeadOffset(); }
+      showToast("公告已收起");
+    });
+  }
+
+  /* ---------- 移动端导航 ---------- */
+  var burger = document.getElementById("mgBurger");
+  var mobileNav = document.getElementById("mgMobileNav");
+  if(burger && mobileNav){
+    burger.addEventListener("click", function(){
+      var open = mobileNav.classList.toggle("is-open");
+      burger.setAttribute("aria-expanded", open ? "true" : "false");
+      burger.textContent = open ? "✕" : "☰";
+      syncHeadOffset();
+    });
+    mobileNav.addEventListener("click", function(e){
+      if(e.target.tagName === "A"){
+        mobileNav.classList.remove("is-open");
+        burger.setAttribute("aria-expanded","false");
+        burger.textContent = "☰";
+        syncHeadOffset();
+      }
+    });
+  }
+
+  /* ---------- 搜索前端反馈 ---------- */
+  var input = document.getElementById("mgSearchInput");
+  var btn = document.getElementById("mgSearchBtn");
+  var hint = document.getElementById("mgSearchHint");
+  var index = [
+    {t:"柔光·束影 第 01 组", k:"人像 写真 自然光"},
+    {t:"束感造型入门：三种收束方式", k:"造型 教程 腰封"},
+    {t:"摄影师访谈：坚持不磨皮", k:"访谈 真实 后期"},
+    {t:"城市天台写真 傍晚光线", k:"城市 探索 治愈"},
+    {t:"束带手工课 旧衣料改造", k:"手作 DIY 材料"},
+    {t:"旧街区城市记录", k:"在地文化 街区"},
+    {t:"创作者扶持计划 第 04 期", k:"报名 投稿 扶持"}
+  ];
+  function doSearch(){
+    if(!input || !hint) return;
+    var q = input.value.trim();
+    if(!q){
+      hint.innerHTML = "输入关键词试试：<b>束感造型</b>、<b>自然光</b>、<b>访谈</b>、<b>手作</b>";
+      hint.classList.add("is-open");
+      return;
+    }
+    var hits = index.filter(function(it){
+      return (it.t + it.k).indexOf(q) > -1;
+    });
+    if(hits.length){
+      hint.innerHTML = "找到 " + hits.length + " 条相关：<br>" + hits.map(function(h){
+        return "<b>" + h.t + "</b>";
+      }).join("<br>");
+    }else{
+      hint.innerHTML = "暂无匹配「<b>" + q + "</b>」的内容，可尝试「<b>写真</b>」「<b>造型</b>」「<b>创作者</b>」。";
+    }
+    hint.classList.add("is-open");
+  }
+  if(btn) btn.addEventListener("click", doSearch);
+  if(input){
+    input.addEventListener("input", function(){
+      if(input.value.trim().length >= 1){ doSearch(); }
+      else if(hint){ hint.classList.remove("is-open"); }
+    });
+    input.addEventListener("keydown", function(e){
+      if(e.key === "Enter"){ e.preventDefault(); doSearch(); }
+    });
+  }
+  document.addEventListener("click", function(e){
+    if(hint && !hint.contains(e.target) && e.target !== input && e.target !== btn){
+      hint.classList.remove("is-open");
+    }
+  });
+
+  /* ---------- 点赞 / 收藏 ---------- */
+  document.querySelectorAll(".mg-like").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      var span = btn.querySelector("span");
+      var on = btn.classList.toggle("is-on");
+      var n = parseInt(span.textContent.replace(/,/g,""),10) || 0;
+      span.textContent = (on ? n + 1 : n - 1).toLocaleString("en-US");
+      showToast(on ? "已点赞，谢谢你喜欢这支影像" : "已取消点赞");
+    });
+  });
+  document.querySelectorAll(".mg-fav").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      var on = btn.classList.toggle("is-on");
+      btn.textContent = on ? "已收藏" : "收藏";
+      showToast(on ? "已加入丽柜美束写真收藏夹" : "已取消收藏");
+    });
+  });
+
+  /* ---------- 弹窗基础 ---------- */
+  function openModal(id){
+    var m = document.getElementById(id);
+    if(!m) return;
+    m.classList.add("is-on");
+    m.setAttribute("aria-hidden","false");
+    document.body.style.overflow = "hidden";
+  }
+  function closeModal(m){
+    if(!m) return;
+    m.classList.remove("is-on");
+    m.setAttribute("aria-hidden","true");
+    document.body.style.overflow = "";
+  }
+  document.querySelectorAll("[data-close]").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      closeModal(document.getElementById(btn.getAttribute("data-close")));
+    });
+  });
+  document.querySelectorAll(".mg-modal").forEach(function(m){
+    m.addEventListener("click", function(e){
+      if(e.target === m){ closeModal(m); }
+    });
+  });
+  document.addEventListener("keydown", function(e){
+    if(e.key === "Escape"){
+      document.querySelectorAll(".mg-modal.is-on").forEach(closeModal);
+    }
+  });
+
+  /* ---------- 评论弹窗 ---------- */
+  document.querySelectorAll(".mg-comment").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      var title = btn.getAttribute("data-title") || "评论";
+      var t = document.getElementById("mgCommentTitle");
+      if(t) t.textContent = title;
+      openModal("mgCommentModal");
+    });
+  });
+
+  /* ---------- 作者弹窗 ---------- */
+  document.querySelectorAll(".mg-author-card").forEach(function(card){
+    card.style.cursor = "pointer";
+    card.addEventListener("click", function(){
+      var name = card.getAttribute("data-author") || "创作者";
+      var bio = card.getAttribute("data-bio") || "";
+      document.getElementById("mgAuthorModalName").textContent = name;
+      document.getElementById("mgAuthorModalBio").textContent = bio;
+      openModal("mgAuthorModal");
+    });
+  });
+
+  /* ---------- 复制链接 / 分享 ---------- */
+  function fallbackCopy(text){
+    var ta = document.createElement("textarea");
+    ta.value = text;
+    ta.style.position = "fixed";
+    ta.style.opacity = "0";
+    document.body.appendChild(ta);
+    ta.select();
+    try{ document.execCommand("copy"); }catch(err){}
+    document.body.removeChild(ta);
+  }
+  document.querySelectorAll(".mg-copy").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      var text = btn.getAttribute("data-copy") || "丽柜美束写真";
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(text).then(function(){
+          showToast("已复制到剪贴板");
+        }).catch(function(){
+          fallbackCopy(text);
+          showToast("已复制到剪贴板");
+        });
+      }else{
+        fallbackCopy(text);
+        showToast("已复制到剪贴板");
+      }
+    });
+  });
+  document.querySelectorAll(".mg-share-tip").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      showToast(btn.getAttribute("data-tip") || "已生成分享提示");
+    });
+  });
+  var shareBtn = document.getElementById("mgShareBtn");
+  if(shareBtn){
+    shareBtn.addEventListener("click", function(){ openModal("mgShareModal"); });
+  }
+
+  /* ---------- 投稿弹窗与表单 ---------- */
+  var submitBtn = document.getElementById("mgSubmitBtn");
+  if(submitBtn){
+    submitBtn.addEventListener("click", function(){ openModal("mgSubmitModal"); });
+  }
+  var submitForm = document.getElementById("mgSubmitForm");
+  if(submitForm){
+    submitForm.addEventListener("submit", function(e){
+      e.preventDefault();
+      var name = document.getElementById("mgFormName");
+      if(name && !name.value.trim()){
+        name.focus();
+        showToast("请先填写称呼");
+        return;
+      }
+      closeModal(document.getElementById("mgSubmitModal"));
+      submitForm.reset();
+      showToast("已提交，丽柜美束写真将在两个工作日内回复");
+    });
+  }
+
+  /* ---------- 数字滚动 ---------- */
+  var counters = document.querySelectorAll("[data-count]");
+  var counted = false;
+  function runCount(){
+    if(counted) return;
+    counted = true;
+    counters.forEach(function(el){
+      var target = parseInt(el.getAttribute("data-count"),10) || 0;
+      var start = performance.now();
+      var dur = 1100;
+      function step(now){
+        var p = Math.min((now - start) / dur, 1);
+        var eased = 1 - Math.pow(1 - p, 3);
+        el.textContent = Math.round(target * eased).toLocaleString("en-US");
+        if(p < 1){ requestAnimationFrame(step); }
+      }
+      requestAnimationFrame(step);
+    });
+  }
+  if("IntersectionObserver" in window && counters.length){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){ runCount(); io.disconnect(); }
+      });
+    }, {threshold:.3});
+    io.observe(counters[0].closest(".mg-hero__stats") || counters[0]);
+  }else{
+    runCount();
+  }
+
+  /* ---------- 回到顶部 ---------- */
+  var topBtn = document.getElementById("mgTopBtn");
+  window.addEventListener("scroll", function(){
+    if(!topBtn) return;
+    if(window.scrollY > 480){ topBtn.classList.add("is-on"); }
+    else{ topBtn.classList.remove("is-on"); }
+  }, {passive:true});
+  if(topBtn){
+    topBtn.addEventListener("click", function(){
+      window.scrollTo({top:0, behavior:"smooth"});
+    });
+  }
+
+  /* ---------- 公告轮播 ---------- */
+  var noticeList = document.getElementById("mgNoticeList");
+  if(noticeList){
+    var items = noticeList.querySelectorAll(".mg-notice__item");
+    var idx = 0;
+    if(items.length > 1){
+      items.forEach(function(it,i){ if(i > 0) it.style.display = "none"; });
+      setInterval(function(){
+        items[idx].style.display = "none";
+        idx = (idx + 1) % items.length;
+        items[idx].style.display = "";
+      }, 5200);
+    }
+  }
+})();
+</script>
+</body>
+          </html>
